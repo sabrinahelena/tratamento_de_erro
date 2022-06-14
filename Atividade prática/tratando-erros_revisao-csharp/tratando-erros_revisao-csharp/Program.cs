@@ -32,17 +32,22 @@ double zerarResultado()
     return resultado = 0;
 }
 
-/*double pegarResultadoDaUltimaOperacaoMatematica() 
-    {
+double pegarResultadoDaUltimaOperacaoMatematica() 
+{
     return resultado;
-    }   
+} 
 
 double definirResultadoDaUltimaOperacaoMatematica() 
     {
-    return 
+    double novoValor;
+    Console.WriteLine("Digite novo valor para última operação: ");
+    novoValor = Convert.ToDouble(Console.ReadLine());
+
+    resultado = novoValor;
+
+    return resultado;
     }
 
-*/
 
 //Main
 
@@ -88,9 +93,13 @@ while (i == 0)
     {
         zerarResultado();
     }
+    else if (opcao == 6)
+    {
+        pegarResultadoDaUltimaOperacaoMatematica();
+    }
     else
     {
-        Console.WriteLine("Não existe no momento essa opção");
+        definirResultadoDaUltimaOperacaoMatematica();
     }
 
     Console.WriteLine("Deseja continuar na calculadora? Digite 1 para não e 0 para sim: ");
@@ -99,16 +108,8 @@ while (i == 0)
 
 }
 
-    /*else if (opcao == 6)
-    {
-        pegarResultadoDaUltimaOperacaoMatematica();
-    }
-    else
-    {
-        definirResultadoDaUltimaOperacaoMatematica();
-    }
-}
+  
 
-    */
+    
 
 
