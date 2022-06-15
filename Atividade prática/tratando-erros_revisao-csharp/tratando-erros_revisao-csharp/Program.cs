@@ -17,17 +17,9 @@ double subtrairValor(double valor)
 
 double dividirValor(double valor)
 {
-    try
-    {
-        return resultado /= valor;
-    }
-    catch (Exception erro) when (resultado == 0)
-    {
-        Console.WriteLine("CodError001 - Divisão por 0 não é possível.");
-        Console.WriteLine(erro.GetType());
-    }
-
-return resultado;
+ 
+    return resultado /= valor;
+  
 }
 
 double multiplicarValor(double valor)
