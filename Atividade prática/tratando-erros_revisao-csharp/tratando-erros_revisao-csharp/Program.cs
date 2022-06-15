@@ -115,6 +115,7 @@ try
         {
             definirResultadoDaUltimaOperacaoMatematica();
         }
+        Console.WriteLine($"O valor é: {resultado}");
         Console.WriteLine("Deseja continuar na calculadora? Digite 1 para não e 0 para sim: ");
         i = Convert.ToInt32(Console.ReadLine());
     }
